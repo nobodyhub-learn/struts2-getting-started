@@ -2,26 +2,59 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.nobodyhub.learn</groupId>
-    <artifactId>struts-getting-started</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+  <groupId>com.nobodyhub.learn</groupId>
+  <artifactId>struts-getting-started</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
-    <name>Getting Started for Struts2</name>
+  <name>Getting Started for Struts2</name>
 
-    <modules>
-        <module>basic_struts</module>
-    </modules>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
 
+    <struts2.version>2.5.14.1</struts2.version>
+    <log4j2.version>2.10.0</log4j2.version>
+    <jetty-plugin.version>9.4.11.v20180605</jetty-plugin.version>
+  </properties>
+
+  <modules>
+    <module>basic-struts</module>
+  </modules>
+
+  <dependencyManagement>
     <dependencies>
-        <dependency>
-            <groupId>org.apache.struts</groupId>
-            <artifactId>struts2-core</artifactId>
-            <version>2.5.20</version>
-        </dependency>
+      <dependency>
+        <groupId>org.apache.struts</groupId>
+        <artifactId>struts2-bom</artifactId>
+        <version>${struts2.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-bom</artifactId>
+        <version>${log4j2.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
     </dependencies>
+  </dependencyManagement>
 
-    
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+    </dependency>
+  </dependencies>
+
+
 </project>
