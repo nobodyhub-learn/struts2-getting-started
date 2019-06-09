@@ -28,6 +28,7 @@
     <module>using-tags</module>
     <module>coding-actions</module>
     <module>processing-forms</module>
+    <module>form-validation</module>
   </modules>
 
   <dependencyManagement>
