@@ -30,6 +30,7 @@
     <module>processing-forms</module>
     <module>form-validation</module>
     <module>message-resource-files</module>
+    <module>exception-handling</module>
   </modules>
 
   <dependencyManagement>
