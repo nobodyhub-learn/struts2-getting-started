@@ -8,6 +8,7 @@
 * [Hello World Using Struts 2](/hello-world)
 * [Using Tags](/using-tags)
 * [Coding actions](/coding-actions)
+* [Processing Forms](/processing-forms)
 
 ## Reference
 
