@@ -1,6 +1,7 @@
-package com.nobodyhub.learn.action;
+package com.nobodyhub.learn.helloworld.action;
 
-import com.nobodyhub.learn.model.MessageStore;
+
+import com.nobodyhub.learn.helloworld.model.MessageStore;
 import com.opensymphony.xwork2.ActionSupport;
 import lombok.Getter;
 
@@ -13,3 +14,4 @@ public class HelloWorldAction extends ActionSupport {
         return SUCCESS;
     }
 }
+
