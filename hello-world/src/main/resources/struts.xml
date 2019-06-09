@@ -9,7 +9,7 @@
 
   <package name="basicstruts2" extends="struts-default">
     <action name="index">
-      <result>index.jsp</result>
+      <result>/index.jsp</result>
     </action>
 
     <action name="hello" class="com.nobodyhub.learn.action.HelloWorldAction" method="execute">
