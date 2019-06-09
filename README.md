@@ -10,6 +10,7 @@
 * [Coding actions](/coding-actions)
 * [Processing Forms](/processing-forms)
 * [Form Validation](/form-validation)
+* [Message Resource Files](/message-resource-files)
 
 ## Reference
 
