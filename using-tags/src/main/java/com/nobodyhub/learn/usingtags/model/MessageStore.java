@@ -1,9 +1,13 @@
-package com.nobodyhub.learn.model;
+package com.nobodyhub.learn.usingtags.model;
 
 import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-@Getter
+@ToString
 public class MessageStore {
+    @Getter
+    @Setter
     private String message;
 
     public MessageStore() {

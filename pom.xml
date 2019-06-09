@@ -25,6 +25,7 @@
   <modules>
     <module>basic-struts</module>
     <module>hello-world</module>
+    <module>using-tags</module>
   </modules>
 
   <dependencyManagement>
