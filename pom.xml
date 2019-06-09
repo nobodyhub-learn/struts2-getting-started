@@ -31,6 +31,7 @@
     <module>form-validation</module>
     <module>message-resource-files</module>
     <module>exception-handling</module>
+    <module>debugging-struts</module>
   </modules>
 
   <dependencyManagement>

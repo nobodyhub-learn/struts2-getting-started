@@ -12,6 +12,7 @@
 * [Form Validation](/form-validation)
 * [Message Resource Files](/message-resource-files)
 * [Exception Handling](/exception-handling)
+* [Debugging Struts](/debugging-struts)
 
 ## Reference
 
