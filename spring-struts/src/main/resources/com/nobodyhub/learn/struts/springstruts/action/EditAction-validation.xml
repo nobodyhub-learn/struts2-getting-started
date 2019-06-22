@@ -1,0 +1,44 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+  <validator type="requiredstring">
+    <param name="fieldName">person.firstName</param>
+    <message>First Name is required.</message>
+  </validator>
+  <validator type="requiredstring">
+    <param name="fieldName">person.lastName</param>
+    <message>Last Name is required.</message>
+  </validator>
+  <validator type="requiredstring">
+    <param name="fieldName">person.email</param>
+    <message>Email is required.</message>
+  </validator>
+  <validator type="email">
+    <param name="fieldName">person.email</param>
+    <message>Email address is not valid.</message>
+  </validator>
+  <validator type="requiredstring">
+    <param name="fieldName">person.phoneNumber</param>
+    <message>Phone number is required.</message>
+  </validator>
+  <validator type="regex">
+    <param name="fieldName">person.phoneNumber</param>
+    <param name="regex"><![CDATA[\d{3}-\d{3}-\d{4}]]></param>
+    <message>Phone number must be entered as 999-999-9999.</message>
+  </validator>
+  <validator type="fieldexpression">
+    <param name="fieldName">person.carModels</param>
+    <param name="expression"><![CDATA[person.carModels.length >0]]></param>
+    <message>You must select at least one car models</message>
+  </validator>
+  <field name="person.age">
+    <field-validator type="required">
+      <message>${getText(fieldName)} is required.</message>
+    </field-validator>
+    <field-validator type="int">
+      <param name="min">1</param>
+      <param name="max">120</param>
+      <message key="age.error" />
+    </field-validator>
+  </field>
+</validators>
